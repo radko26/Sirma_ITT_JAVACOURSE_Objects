@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_KczZQOdpEeOwpNkPEgbEQQ" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="_CFPf4OgCEeOwpNkPEgbEQQ" name="точка">
+    <generalization xmi:type="uml:Generalization" xmi:id="_JdIBgOgEEeOwpNkPEgbEQQ" general="_PoUDUOgCEeOwpNkPEgbEQQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PFJr4OgCEeOwpNkPEgbEQQ" name="фигура"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PdLxYOgCEeOwpNkPEgbEQQ" name="елипса">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Kw59kOgEEeOwpNkPEgbEQQ" general="_PFJr4OgCEeOwpNkPEgbEQQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PoUDUOgCEeOwpNkPEgbEQQ" name="дъга">
+    <generalization xmi:type="uml:Generalization" xmi:id="_JxRFgOgEEeOwpNkPEgbEQQ" general="_TzqpcOgCEeOwpNkPEgbEQQ"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_KHnwAOgEEeOwpNkPEgbEQQ" general="_PdLxYOgCEeOwpNkPEgbEQQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TzqpcOgCEeOwpNkPEgbEQQ" name="окръжност">
+    <generalization xmi:type="uml:Generalization" xmi:id="_KdhukOgEEeOwpNkPEgbEQQ" general="_PFJr4OgCEeOwpNkPEgbEQQ"/>
+  </packagedElement>
+</uml:Model>
