@@ -1,4 +1,4 @@
-package main.java.com.sirma.itt.javacourse.objects.Sumator;
+package main.java.com.sirma.itt.javacourse.objects.sumator;
 
 /**
  * Sumator problem main class
@@ -9,10 +9,12 @@ public class Main {
 
 	private static Sumator sumator;
 
+	/**
+	 * main
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
-		/**
-		 * @link to the sumator class
-		 */
 		sumator = new Sumator();
 		String a = "-5650";
 		String b = "1";

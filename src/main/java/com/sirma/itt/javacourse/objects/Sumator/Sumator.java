@@ -1,4 +1,4 @@
-package main.java.com.sirma.itt.javacourse.objects.Sumator;
+package main.java.com.sirma.itt.javacourse.objects.sumator;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
