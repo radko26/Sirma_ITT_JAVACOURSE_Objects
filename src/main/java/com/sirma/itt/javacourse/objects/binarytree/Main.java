@@ -1,7 +1,16 @@
 package main.java.com.sirma.itt.javacourse.objects.binarytree;
 
+/**
+ * Class for testing the Binary Tree structure
+ * 
+ * @author radoslav
+ */
 public class Main {
-
+	/**
+	 * Added few elements to show how it works
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		BinaryTree tree = new BinaryTree();
 
