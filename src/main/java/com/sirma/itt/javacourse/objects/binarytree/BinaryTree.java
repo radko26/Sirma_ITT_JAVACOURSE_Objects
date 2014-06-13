@@ -34,7 +34,7 @@ public class BinaryTree {
 			return true;
 		}
 		if (data < current.getData()) {
-			search(current.getLeft(), data);
+			return search(current.getLeft(), data);
 		}
 		return search(current.getRight(), data);
 	}
