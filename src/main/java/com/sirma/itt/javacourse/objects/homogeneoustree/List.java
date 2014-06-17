@@ -1,6 +1,6 @@
-package main.java.com.sirma.itt.javacourse.objects.homogeneous_tree;
+package main.java.com.sirma.itt.javacourse.objects.homogeneoustree;
 
-import main.java.com.sirma.itt.javacourse.objects.homogeneous_tree.Node;
+import main.java.com.sirma.itt.javacourse.objects.homogeneoustree.Node;
 
 /**
  * List class, own implementation.Every element has its own adress via node.

@@ -1,4 +1,4 @@
-package main.java.com.sirma.itt.javacourse.objects.homogeneous_tree;
+package main.java.com.sirma.itt.javacourse.objects.homogeneoustree;
 
 /**
  * Main class to run it
