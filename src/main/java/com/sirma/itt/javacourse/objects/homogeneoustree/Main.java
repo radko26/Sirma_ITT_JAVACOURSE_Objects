@@ -1,7 +1,7 @@
 package main.java.com.sirma.itt.javacourse.objects.homogeneoustree;
 
 /**
- * Main class to run it
+ * Main class / see tests
  * 
  * 
  * @author radoslav
@@ -22,10 +22,7 @@ public class Main {
 		l.insert(r);
 		l.insert(v);
 
-		l.search(s);
-		l.search(p);
-		l.search(r);
-		l.search(v);
+	
 
 	}
 
