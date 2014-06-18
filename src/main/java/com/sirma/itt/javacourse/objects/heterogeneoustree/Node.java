@@ -1,4 +1,4 @@
-package main.java.com.sirma.itt.javacourse.objects.homogeneoustree;
+package main.java.com.sirma.itt.javacourse.objects.heterogeneoustree;
 
 /**
  * Node class, which represent a pointer to the next element and holds data.
@@ -9,6 +9,7 @@ public class Node {
 
 	private Node next;
 	private Node parent;
+	private Node child;
 	private Element<?, ?> data;
 
 	/**
@@ -37,7 +38,14 @@ public class Node {
 	}
 
 	/**
-	 * Set methods for giving the private variables value
+	 * @return the child of the current one
+	 */
+	public Node getChild() {
+		return child;
+	}
+
+	/**
+	 * Set methods for giving the private variables value.
 	 * 
 	 * @param data
 	 */
@@ -51,6 +59,10 @@ public class Node {
 
 	public void setParent(Node parent) {
 		this.parent = parent;
+	}
+
+	public void setChild(Node child) {
+		this.child = child;
 	}
 
 }
