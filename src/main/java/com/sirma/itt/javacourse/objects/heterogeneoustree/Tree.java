@@ -13,7 +13,7 @@ public class Tree {
 	/**
 	 * Initializing variables in the constructor.
 	 */
-	Tree() {
+	public Tree() {
 		root = null;
 	}
 
@@ -65,23 +65,32 @@ public class Tree {
 	 * @param current
 	 * @param data
 	 */
-	private void search(Node current, Element<?, ?> data) {
-		if (current == null) {
-			return;
+	private Node search(Node current, Element<?, ?> data) {
+		Node cur = new Node();
+		cur = root;
+		//System.out.println(root);
+		while(cur!=null){
+			//System.out.println("vlizam v while-a");
+			if (cur.getData().getType().equals(data.getType())) {	
+				if(cur.getData()==data)
+				{
+				//	System.out.println("ravni sa");
+					break;
+				}
+				cur = cur.getChild();
+				//System.out.println("sas");
+			}else{
+				//System.out.println(cur.getData().toString());
+				if(cur.getData().equals(data))
+				{
+					//System.out.println("asaasf");
+					break;
+				}
+				cur = cur.getNext();
+			}
 		}
-		if (current.getData().equals(data)) {
-			System.out.println(current.getData().toString());
-			return;
-		}
-
-		if (current.getData().getType().equals(data.getType())) {
-			search(current.getChild(), data);
-			return;
-		}
-		if (current.getNext() == null) {
-			return;
-		} else
-			search(current.getNext(), data);
+			
+		return cur;
 
 	}
 
@@ -90,8 +99,8 @@ public class Tree {
 	 * 
 	 * @param data
 	 */
-	public void search(Element<?, ?> data) {
-		search(root, data);
+	public Node search(Element<?, ?> data) {
+		return search(root, data);
 	}
 
 }

@@ -22,7 +22,8 @@ public class Main {
 		tree.insert(5);
 		tree.insert(-1);
 
-		tree.traverse();
+		//tree.traverse();
+		System.out.println(tree.search(1009));
 
 	}
 

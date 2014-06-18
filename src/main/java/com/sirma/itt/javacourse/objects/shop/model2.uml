@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_NyGEUOs-EeOK_6aZC2984A" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="_q4WC0OzgEeOK_6aZC2984A" clientDependency="_KN_joPMOEeOxKdIRnL3jAA _KpsoMPMOEeOxKdIRnL3jAA" name="Shop">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ELH84PL7EeOxKdIRnL3jAA" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rCHC0OzgEeOK_6aZC2984A" clientDependency="_wd3LQPL-EeOxKdIRnL3jAA" name="ShopAssistant">
+    <generalization xmi:type="uml:Generalization" xmi:id="_rzkTcPMLEeOxKdIRnL3jAA" general="_reCJ0OzgEeOK_6aZC2984A"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_wd3LQPL-EeOxKdIRnL3jAA" name="" client="_rCHC0OzgEeOK_6aZC2984A" supplier="_DU3YYPL9EeOxKdIRnL3jAA" contract="_DU3YYPL9EeOxKdIRnL3jAA"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6OXJEPMLEeOxKdIRnL3jAA" name="doWhatYouNeedToDo"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rM3hUOzgEeOK_6aZC2984A" name="Products">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QJxLEPL5EeOxKdIRnL3jAA" name="Price" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qo6lMPL5EeOxKdIRnL3jAA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qo7zUPL5EeOxKdIRnL3jAA" value="1"/>
+      <defaultValue xmi:type="uml:StringExpression" xmi:id="_7HSaUPL5EeOxKdIRnL3jAA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Y5oBsPL6EeOxKdIRnL3jAA" name="ExpireDate" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZvpqwPL6EeOxKdIRnL3jAA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZvqR0PL6EeOxKdIRnL3jAA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_Zvrf8PL6EeOxKdIRnL3jAA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rVwXkOzgEeOK_6aZC2984A" name="Person">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hRdZ4PL7EeOxKdIRnL3jAA" name="name" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Jx3rgPMSEeOxKdIRnL3jAA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eSCl8PL8EeOxKdIRnL3jAA" name="type" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_reCJ0OzgEeOK_6aZC2984A" name="Employee">
+    <generalization xmi:type="uml:Generalization" xmi:id="_sqRR8PMLEeOxKdIRnL3jAA" general="_rVwXkOzgEeOK_6aZC2984A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wtQuoPL9EeOxKdIRnL3jAA" name="salary" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_7r7lMPMJEeOxKdIRnL3jAA" name="position" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9IXG8PMJEeOxKdIRnL3jAA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9IXuAPMJEeOxKdIRnL3jAA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_9IYVEPMJEeOxKdIRnL3jAA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rngO4OzgEeOK_6aZC2984A" clientDependency="_a_z40PL_EeOxKdIRnL3jAA" name="Manager">
+    <generalization xmi:type="uml:Generalization" xmi:id="_q5MV4PMLEeOxKdIRnL3jAA" general="_reCJ0OzgEeOK_6aZC2984A"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_a_z40PL_EeOxKdIRnL3jAA" name="" client="_rngO4OzgEeOK_6aZC2984A" supplier="_DU3YYPL9EeOxKdIRnL3jAA" contract="_DU3YYPL9EeOxKdIRnL3jAA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3rlr0OzgEeOK_6aZC2984A" clientDependency="_w-cIwPL-EeOxKdIRnL3jAA" name="Cleaner">
+    <generalization xmi:type="uml:Generalization" xmi:id="_sOt-YPMLEeOxKdIRnL3jAA" general="_reCJ0OzgEeOK_6aZC2984A"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_w-cIwPL-EeOxKdIRnL3jAA" name="" client="_3rlr0OzgEeOK_6aZC2984A" supplier="_DU3YYPL9EeOxKdIRnL3jAA" contract="_DU3YYPL9EeOxKdIRnL3jAA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4pmzQOzgEeOK_6aZC2984A" clientDependency="_orXMYPMLEeOxKdIRnL3jAA" name="Technician">
+    <generalization xmi:type="uml:Generalization" xmi:id="_rXolYPMLEeOxKdIRnL3jAA" general="_reCJ0OzgEeOK_6aZC2984A"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_orXMYPMLEeOxKdIRnL3jAA" name="" client="_4pmzQOzgEeOK_6aZC2984A" supplier="_DU3YYPL9EeOxKdIRnL3jAA" contract="_DU3YYPL9EeOxKdIRnL3jAA"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_TXOW0PL_EeOxKdIRnL3jAA" name="Operation1"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WF5jkPL_EeOxKdIRnL3jAA" name="work"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Acb2YOzhEeOK_6aZC2984A" clientDependency="_9wP7cPMLEeOxKdIRnL3jAA" name="Customer">
+    <generalization xmi:type="uml:Generalization" xmi:id="_td2D8PMLEeOxKdIRnL3jAA" general="_rVwXkOzgEeOK_6aZC2984A"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_9wP7cPMLEeOxKdIRnL3jAA" name="" client="_Acb2YOzhEeOK_6aZC2984A" supplier="_DU3YYPL9EeOxKdIRnL3jAA" contract="_DU3YYPL9EeOxKdIRnL3jAA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_DU3YYPL9EeOxKdIRnL3jAA" name="ShopActivity">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_TXNvwPL_EeOxKdIRnL3jAA" name="doWhatYouNeedToDo"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_KN_joPMOEeOxKdIRnL3jAA" name="" client="_q4WC0OzgEeOK_6aZC2984A" supplier="_rVwXkOzgEeOK_6aZC2984A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_KpsoMPMOEeOxKdIRnL3jAA" name="" client="_q4WC0OzgEeOK_6aZC2984A" supplier="_rM3hUOzgEeOK_6aZC2984A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QE-6QPMQEeOxKdIRnL3jAA" name="Milky">
+    <generalization xmi:type="uml:Generalization" xmi:id="_nARxUPMQEeOxKdIRnL3jAA" general="_rM3hUOzgEeOK_6aZC2984A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QY0cQPMQEeOxKdIRnL3jAA" name="Meat">
+    <generalization xmi:type="uml:Generalization" xmi:id="_nYs4YPMQEeOxKdIRnL3jAA" general="_rM3hUOzgEeOK_6aZC2984A"/>
+  </packagedElement>
+</uml:Model>

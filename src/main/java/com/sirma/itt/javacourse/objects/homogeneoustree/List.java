@@ -44,10 +44,10 @@ public class List {
 	/**
 	 * Predefined method insert.
 	 * 
-	 * @param data
+	 * @param element
 	 */
-	public void insert(Element<?, ?> data) {
-		root = insert(root, data, null);
+	public void insert(Element<?, ?> element) {
+		root = insert(root, element, null);
 	}
 
 	/**
@@ -58,14 +58,13 @@ public class List {
 	 * @param data
 	 *            the value of the element
 	 */
-	public void search(Node current, Element<?, ?> data) {
+	public Node search(Node current, Element<?, ?> data) {
 		if (current.getData() == data) {
-			System.out.println(data.toString());
-			return;
+			return current;
 		} else if (current.getNext() == null) {
-			return;
+			return current;
 		} else
-			search(current.getNext(), data);
+			return search(current.getNext(), data);
 	}
 
 	/**
@@ -73,7 +72,7 @@ public class List {
 	 * 
 	 * @param data
 	 */
-	public void search(Element<?, ?> data) {
-		search(root, data);
+	public Node search(Element<?, ?> data) {
+		return search(root, data);
 	}
 }

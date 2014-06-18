@@ -108,7 +108,8 @@ public class BinaryTree {
 			return;
 		}
 		traverse(current.getLeft());
-		System.out.println(current.getData());
+		System.out.print(current.getData() + " ");
+		// System.out.println("Roditel "+ current.getParent().getData() );
 		traverse(current.getRight());
 	}
 

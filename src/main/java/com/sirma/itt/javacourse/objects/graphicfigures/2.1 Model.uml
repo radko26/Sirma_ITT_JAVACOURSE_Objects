@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_KczZQOdpEeOwpNkPEgbEQQ" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="_CFPf4OgCEeOwpNkPEgbEQQ" name="Point">
+    <generalization xmi:type="uml:Generalization" xmi:id="_YVfnwPF3EeOK_6aZC2984A" general="_PoUDUOgCEeOwpNkPEgbEQQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PFJr4OgCEeOwpNkPEgbEQQ" name="Figure">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="__RyVMOtAEeOK_6aZC2984A" name="draw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PdLxYOgCEeOwpNkPEgbEQQ" name="Ellipse">
+    <generalization xmi:type="uml:Generalization" xmi:id="_aTAdUPF3EeOK_6aZC2984A" general="_PFJr4OgCEeOwpNkPEgbEQQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PoUDUOgCEeOwpNkPEgbEQQ" name="Arc">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Y4Q9oPF3EeOK_6aZC2984A" general="_TzqpcOgCEeOwpNkPEgbEQQ"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_Zp9gUPF3EeOK_6aZC2984A" general="_PdLxYOgCEeOwpNkPEgbEQQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TzqpcOgCEeOwpNkPEgbEQQ" name="Circle">
+    <generalization xmi:type="uml:Generalization" xmi:id="_eRqrQPF3EeOK_6aZC2984A" general="_PFJr4OgCEeOwpNkPEgbEQQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_d0elIOnFEeOK_6aZC2984A" name="arc" type="_PoUDUOgCEeOwpNkPEgbEQQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d0elIenFEeOK_6aZC2984A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d0elIunFEeOK_6aZC2984A" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_I8ksYOspEeOK_6aZC2984A" name="Square">
+    <generalization xmi:type="uml:Generalization" xmi:id="_iInusPF3EeOK_6aZC2984A" general="_buD1cOspEeOK_6aZC2984A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QN92YOspEeOK_6aZC2984A" name="Rhomb">
+    <generalization xmi:type="uml:Generalization" xmi:id="_ixwLQPF3EeOK_6aZC2984A" general="_XMCbwOspEeOK_6aZC2984A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QVEj8OspEeOK_6aZC2984A" name="Figure" isActive="true">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SC1bYOsrEeOK_6aZC2984A" annotatedElement="_QVEj8OspEeOK_6aZC2984A">
+      <body>draw()</body>
+    </ownedComment>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Fvf_gOtBEeOK_6aZC2984A" name="draw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XMCbwOspEeOK_6aZC2984A" name="Parallelogram">
+    <generalization xmi:type="uml:Generalization" xmi:id="_jXEe0PF3EeOK_6aZC2984A" general="_hA8EUOspEeOK_6aZC2984A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_buD1cOspEeOK_6aZC2984A" name="Rectangle">
+    <generalization xmi:type="uml:Generalization" xmi:id="_jFMrsPF3EeOK_6aZC2984A" general="_XMCbwOspEeOK_6aZC2984A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_hA8EUOspEeOK_6aZC2984A" name="Tetragon">
+    <generalization xmi:type="uml:Generalization" xmi:id="_jw-zoPF3EeOK_6aZC2984A" general="_QVEj8OspEeOK_6aZC2984A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_4imX0OspEeOK_6aZC2984A" name="Activity1"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_wF40wOsqEeOK_6aZC2984A" name="Interaction1"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xwKIwOsrEeOK_6aZC2984A" name="Figures">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_JArcYOtBEeOK_6aZC2984A" name="draw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zCCnYOsrEeOK_6aZC2984A" name="PolyLine">
+    <generalization xmi:type="uml:Generalization" xmi:id="_loGGQPF3EeOK_6aZC2984A" general="_1ou80OsrEeOK_6aZC2984A"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_l9iKwPF3EeOK_6aZC2984A" general="_7dgX0OsrEeOK_6aZC2984A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1ou80OsrEeOK_6aZC2984A" name="Segment">
+    <generalization xmi:type="uml:Generalization" xmi:id="_mWYvoPF3EeOK_6aZC2984A" general="_xwKIwOsrEeOK_6aZC2984A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7dgX0OsrEeOK_6aZC2984A" name="Arc">
+    <generalization xmi:type="uml:Generalization" xmi:id="_mys4MPF3EeOK_6aZC2984A" general="_xwKIwOsrEeOK_6aZC2984A"/>
+  </packagedElement>
+</uml:Model>
