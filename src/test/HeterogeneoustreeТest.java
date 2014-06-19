@@ -15,10 +15,10 @@ import org.junit.Test;
  * 
  * @author radoslav
  */
-public class Heterogeneoustreetest {
+public class HeterogeneoustreeТest {
 
 	@Test
-	public void test() {
+	public void testSearchWithHomogenousData() {
 		Tree tester = new Tree();
 		ArrayList<Element<?, ?>> elem = new ArrayList<>();
 		Element<String, Integer> e;
@@ -37,7 +37,7 @@ public class Heterogeneoustreetest {
 	}
 
 	@Test
-	public void test1() {
+	public void testSearchWithTwoTypesOfData() {
 		Tree tester = new Tree();
 		ArrayList<Element<?, ?>> elem = new ArrayList<>();
 		Element<String, Integer> e;
@@ -59,7 +59,7 @@ public class Heterogeneoustreetest {
 	}
 
 	@Test
-	public void test2() {
+	public void testSearchWithVariousTypesOfData() {
 		Tree tester = new Tree();
 		ArrayList<Element<?, ?>> elem = new ArrayList<>();
 		Element<String, Integer> e;
@@ -67,11 +67,13 @@ public class Heterogeneoustreetest {
 		Element<Integer, Boolean> b;
 		for (int i = 0; i < 8000; i++) {
 			e = new Element<String, Integer>("sapsasas", i);
-			k = new Element<Integer, Integer>(i * i, i + 2);
+			k = new Element<Integer, Integer>(
+					(i * i) * (int) Math.random() * 3, i + 2);
 			b = new Element<Integer, Boolean>(i + 2, i % 2 == 0);
 			elem.add(e);
 			elem.add(k);
-			elem.add(b);
+			if (Math.random() > 0.5)
+				elem.add(b);
 		}
 
 		for (int i = 0; i < elem.size(); i++) {

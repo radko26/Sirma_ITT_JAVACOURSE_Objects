@@ -14,10 +14,10 @@ import org.junit.Test;
  * 
  * @author radoslav
  */
-public class Homogenoustreetest {
+public class HomogenoustreeТest {
 
 	@Test
-	public void test() {
+	public void testSearchWithHomogenousData() {
 		List tester = new List();
 		ArrayList<Element<?, ?>> elem = new ArrayList<>();
 		Element<String, Integer> e;
@@ -36,7 +36,7 @@ public class Homogenoustreetest {
 	}
 
 	@Test
-	public void test1() {
+	public void testSearchWithTwoTypesOfData() {
 		List tester = new List();
 		ArrayList<Element<?, ?>> elem = new ArrayList<>();
 		Element<String, Integer> e;
@@ -58,7 +58,7 @@ public class Homogenoustreetest {
 	}
 
 	@Test
-	public void test2() {
+	public void testSearchWithVariousTypesOfData() {
 		List tester = new List();
 		ArrayList<Element<?, ?>> elem = new ArrayList<>();
 		Element<String, Integer> e;
@@ -70,7 +70,8 @@ public class Homogenoustreetest {
 			b = new Element<Integer, Boolean>(i + 2, i % 2 == 0);
 			elem.add(e);
 			elem.add(k);
-			elem.add(b);
+			if (Math.random() > 0.5)
+				elem.add(b);
 		}
 
 		for (int i = 0; i < elem.size(); i++) {

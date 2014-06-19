@@ -68,30 +68,20 @@ public class Tree {
 	private Node search(Node current, Element<?, ?> data) {
 		Node cur = new Node();
 		cur = root;
-		//System.out.println(root);
-		while(cur!=null){
-			//System.out.println("vlizam v while-a");
-			if (cur.getData().getType().equals(data.getType())) {	
-				if(cur.getData()==data)
-				{
-				//	System.out.println("ravni sa");
+		while (cur != null) {
+			if (cur.getData().getType().equals(data.getType())) {
+				if (cur.getData() == data) {
 					break;
 				}
 				cur = cur.getChild();
-				//System.out.println("sas");
-			}else{
-				//System.out.println(cur.getData().toString());
-				if(cur.getData().equals(data))
-				{
-					//System.out.println("asaasf");
+			} else {
+				if (cur.getData().equals(data)) {
 					break;
 				}
 				cur = cur.getNext();
 			}
 		}
-			
 		return cur;
-
 	}
 
 	/**

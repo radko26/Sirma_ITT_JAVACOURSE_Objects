@@ -22,8 +22,6 @@ public class Main {
 		l.insert(r);
 		l.insert(v);
 
-	
-
 	}
 
 }

@@ -9,6 +9,6 @@ package main.java.com.sirma.itt.javacourse.objects.heterogeneoustree;
 
 public class Main {
 	public static void main(String[] args) {
-		
+
 	}
 }
