@@ -18,6 +18,10 @@ import org.junit.Test;
 public class HeterogeneoustreeТest {
 
 	@Test
+	/**
+	 * Insert only one type of data in the tree
+	 * and then search it.
+	 */
 	public void testSearchWithHomogenousData() {
 		Tree tester = new Tree();
 		ArrayList<Element<?, ?>> elem = new ArrayList<>();
@@ -33,10 +37,14 @@ public class HeterogeneoustreeТest {
 		for (int i = 0; i < elem.size(); i++) {
 			assertEquals(elem.get(i), tester.search(elem.get(i)).getData());
 		}
-
 	}
 
 	@Test
+	/**
+	 * Inserts two different types
+	 * and search for them.
+	 * Their add sequence is same. 
+	 */
 	public void testSearchWithTwoTypesOfData() {
 		Tree tester = new Tree();
 		ArrayList<Element<?, ?>> elem = new ArrayList<>();
@@ -59,6 +67,9 @@ public class HeterogeneoustreeТest {
 	}
 
 	@Test
+	/**
+	 * Insert three types of data but in a random order.
+	 */
 	public void testSearchWithVariousTypesOfData() {
 		Tree tester = new Tree();
 		ArrayList<Element<?, ?>> elem = new ArrayList<>();

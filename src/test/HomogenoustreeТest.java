@@ -17,6 +17,10 @@ import org.junit.Test;
 public class HomogenoustreeТest {
 
 	@Test
+	/**
+	 * Insert only one type of data in the tree
+	 * and then search it.
+	 */
 	public void testSearchWithHomogenousData() {
 		List tester = new List();
 		ArrayList<Element<?, ?>> elem = new ArrayList<>();
@@ -36,6 +40,11 @@ public class HomogenoustreeТest {
 	}
 
 	@Test
+	/**
+	 * Inserts two different types
+	 * and search for them.
+	 * Their add sequence is same. 
+	 */
 	public void testSearchWithTwoTypesOfData() {
 		List tester = new List();
 		ArrayList<Element<?, ?>> elem = new ArrayList<>();
@@ -58,6 +67,9 @@ public class HomogenoustreeТest {
 	}
 
 	@Test
+	/**
+	 * Insert three types of data but in a random order.
+	 */
 	public void testSearchWithVariousTypesOfData() {
 		List tester = new List();
 		ArrayList<Element<?, ?>> elem = new ArrayList<>();
