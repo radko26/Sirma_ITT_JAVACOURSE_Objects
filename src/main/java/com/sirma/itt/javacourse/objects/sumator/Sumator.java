@@ -14,74 +14,83 @@ public class Sumator {
 	private BigDecimal sumBigDecimal;
 
 	/**
-	 * via the Sumator() constructor the initialization of variables is done
+	 * Calculate the sum of two integers.
 	 * 
+	 * @param firstNumber
+	 *            the first number
+	 * @param secondNumber
+	 *            the second number
+	 * @return their sum
 	 */
-	public Sumator() {
-		sumBigInteger = new BigInteger("0");
-		sumBigDecimal = new BigDecimal(0);
+	public int sum(int firstNumber, int secondNumber) {
+		return firstNumber + secondNumber;
 	}
 
 	/**
+	 * Calculate the sum of two float numbers.
 	 * 
-	 * @param a
-	 *            numberA (int)
-	 * @param b
-	 *            numberB (int)
-	 * @return their sum (int)
+	 * @param firstNumber
+	 *            the first number
+	 * @param secondNumber
+	 *            the second number
+	 * @return return the sum
 	 */
-	public int sum(int a, int b) {
-		return a + b;
-	}
-
-	// same as the int type
-	public float sum(float a, float b) {
-		return a + b;
+	public float sum(float firstNumber, float secondNumber) {
+		return firstNumber + secondNumber;
 	}
 
 	/**
-	 * Making a new BigInteger object and add both @param a , @param b to it
+	 * Making firstNumber new BigInteger object and add both @param firstNumber
+	 * , @param secondNumber to it
 	 * 
 	 * 
-	 * @param a
+	 * @param firstNumber
 	 *            BigInteger object
-	 * @param b
+	 * @param secondNumber
 	 *            BigInteger object
 	 * @return String representation of the new BigInteger object in which we
 	 *         keep the sum
 	 */
-	public String sum(BigInteger a, BigInteger b) {
-		sumBigInteger = sumBigInteger.add(a);
-		sumBigInteger = sumBigInteger.add(b);
+	public String sum(BigInteger firstNumber, BigInteger secondNumber) {
+		sumBigInteger = new BigInteger("0");
+		sumBigInteger = sumBigInteger.add(firstNumber);
+		sumBigInteger = sumBigInteger.add(secondNumber);
 		return sumBigInteger.toString();
 	}
 
-	// same as BigInteger type
-	// only the @param a,b are BigDecimal
-	// and we store the sum in BigDecimal object
-	public String sum(BigDecimal a, BigDecimal b) {
-		sumBigDecimal = sumBigDecimal.add(a);
-		sumBigDecimal = sumBigDecimal.add(b);
+	/**
+	 * Using built in BigDecimal class calculate the value
+	 * 
+	 * @param firstNumber
+	 *            the first number
+	 * @param secondNumber
+	 *            the second number
+	 * @return the sum
+	 */
+	public String sum(BigDecimal firstNumber, BigDecimal secondNumber) {
+		sumBigDecimal = new BigDecimal(0);
+		sumBigDecimal = sumBigDecimal.add(firstNumber);
+		sumBigDecimal = sumBigDecimal.add(secondNumber);
 		return sumBigDecimal.toString();
 	}
 
 	/**
-	 * Summing 2 string numbers, requires own implementation or making a
-	 * BigInteger object with the string's value. Here we use the build in
-	 * java.math.BigInteger
+	 * Summing 2 string integer numbers, requires own implementation or making
+	 * firstNumber BigInteger object with the string's value. Here we use the
+	 * build in java.math.BigInteger
 	 * 
-	 * @param a
-	 *            number is passed in a string
-	 * @param b
-	 *            number is passed in a string
+	 * @param firstNumber
+	 *            number is passed in firstNumber string
+	 * @param secondNumber
+	 *            number is passed in firstNumber string
 	 * @return the String representation of the BigInteger object
 	 */
-	public String sum(String a, String b) {
-		BigInteger numA = new BigInteger(a);
-		BigInteger numB = new BigInteger(b);
-
-		sumBigInteger = sumBigInteger.add(numA);
-		sumBigInteger = sumBigInteger.add(numB);
+	public String sum(String firstNumber, String secondNumber) {
+		sumBigInteger = new BigInteger("0");
+		BigInteger firstNumberToInt = new BigInteger(firstNumber);
+		BigInteger secondNumberToInt = new BigInteger(secondNumber);
+		sumBigInteger = sumBigInteger.add(firstNumberToInt);
+		sumBigInteger = sumBigInteger.add(secondNumberToInt);
 		return sumBigInteger.toString();
 	}
 

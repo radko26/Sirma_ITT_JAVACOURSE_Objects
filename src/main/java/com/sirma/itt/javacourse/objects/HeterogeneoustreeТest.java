@@ -1,4 +1,4 @@
-package test;
+package main.java.com.sirma.itt.javacourse.objects;
 
 import static org.junit.Assert.*;
 
